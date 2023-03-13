@@ -24,18 +24,5 @@ def get_blog(num):
     return render_template("post.html",
                            posts=all_posts,
                            num=num)
-
-    # for blog in all_posts:
-    #     if blog['id'] == num:
-    #         chosen_title = blog['title']
-    #         chosen_subtitle = blog['subtitle']
-    #         chosen_body = blog['body']
-    #
-    #         return render_template("post.html",
-    #                                title=chosen_title,
-    #                                subtitle=chosen_subtitle,
-    #                                ch_body=chosen_body)
-
-
 if __name__ == "__main__":
     app.run(debug=True)
